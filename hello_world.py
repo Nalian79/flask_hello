@@ -2,6 +2,17 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+@app.route("/")
+def default():
+    html = """
+        <h1>Hi!  You've reached the landing page.</h1>
+        <p>Modify your URL to reach the Jedi and Hello applications.</p>
+        <p>Simply add /hello, /hello/<your_name>, or you can check out the</p>
+        <p>Jedi name at /jedi/<firstname>/<lastname>."</p>
+    """
+    return html
+
+
 @app.route("/hello")
 def hello_world():
     return "Hello World!"
