@@ -7,8 +7,8 @@ def default():
     html = """
         <h1>Hi!  You've reached the landing page.</h1>
         <p>Modify your URL to reach the Jedi and Hello applications.</p>
-        <p>Simply add /hello, /hello/\<your_name\>, or you can check out the</p>
-        <p>Jedi name at /jedi/\<firstname\>/\<lastname\>."</p>
+        <p>Simply add /hello, /hello/&lt;your_name&gt;, or check out the</p>
+        <p>Jedi name at /jedi/&lt;firstname&gt;/&ltlastname&gt;."</p>
     """
     return html
 
