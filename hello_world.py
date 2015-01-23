@@ -10,7 +10,7 @@ def hello_world():
 @app.route("/hello/<name>")
 def hello_person(name):
     return render_template('hello.html',
-                           my_name=name,
+                           name=name,
                            url="http://placekitten.com/g/200/300")
 
 
